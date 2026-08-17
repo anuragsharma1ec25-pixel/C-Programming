@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("enter the size of an array\n");
+    int n, max=INT_MIN,min=INT_MAX;
+    scanf("%d", &n);
+    int a[n];
+    for(int i=500; i<500+n; i++){
+        scanf("%d", &a[i]);
+    }
+    for(int i=501; i<501+n; i++){
+        if(max < a[i]) max=a[i];
+        if(min > a[i]) min=a[i];
+       
+    }
+    print("max=%d\nmin=%d\n", max,min);
+
+    return 0;
+}
